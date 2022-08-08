@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: #ccc;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.slider{
+    width: 100%; 
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider .slider_wrapper{
+    overflow: hidden;
+}
+.slider .slider__list{
+    display: flex;
+    max-width: 938PX;
+    width: 100%;
+}
+.slider .slider__item{
+    padding: 2%;
+}
+.slider .slider_btns{
+    margin: 1%;
+}
+.slider .slider_btns button{
+    font-size: 40px;
+    color: rgb(237, 109, 109);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.slider .slider_btns button:first-child{
+    margin-right: 20px;
+}
+.slider button:hover{
+    color: rgb(126, 12, 12);
+}
+.slider .slider_dots button{
+    background-color: rgb(237, 109, 109);
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50% 50%;
+}
+.slider .slider_dots button{
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slider .slider_dots button:hover,
+.slider .slider_dots button.active{
+    background-color: rgb(126, 12, 12);
+}
